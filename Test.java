@@ -1,9 +1,12 @@
 public class Test{
 	public static void main(String[] args){
 		System.out.println("hello world");
-		int[] a= {1,2,3,4,5,6,7};
-		int result = BinarySearch(a,2);
-		System.out.println(result);
+		int[] data = new int[]{4,8,3,7,1,5,6,2};
+		MergeSort m = new MergeSort();
+		m.mergeSort(data,0,7);
+		for(int x:data){
+			System.out.println(x);
+		}
 	}
 	
 	public static int BinarySearch(int[] array, int x){
