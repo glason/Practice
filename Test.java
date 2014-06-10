@@ -2,8 +2,16 @@ public class Test{
 	public static void main(String[] args){
 		System.out.println("hello world");
 		int[] data = new int[]{4,8,3,7,1,5,6,2};
-		MergeSort m = new MergeSort();
-		m.mergeSort(data,0,7);
+		//MergeSort m = new MergeSort();
+		//m.mergeSort(data,0,7);
+		//QuickSort q = new QuickSort();
+		//q.quickSort(data,0,7);
+		//BubbleSort b = new BubbleSort();
+		//b.bubbleSort(data);
+		//InsertSort insert = new InsertSort();
+		//insert.insertSort(data);
+		ShellSort shell = new ShellSort();
+		shell.shellSort(data);
 		for(int x:data){
 			System.out.println(x);
 		}
